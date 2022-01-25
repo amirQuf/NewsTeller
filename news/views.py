@@ -1,9 +1,17 @@
 from django.shortcuts import render
-from django.views.generic import ListView
-from .models import News
+from .models import News ,Category ,Favcategory
+from rest_framework.viewsets import ModelViewSet 
+from .serializers import (
+    NewsSerializer ,CategorySerializer ,FavcategorySerializer)
 
-class NewsList(ListView):
-    model = News
-    context_object_name = 'news'
-    template_name='news/index.html'
-    
+class NewsViewSet(ModelViewSet):
+    queryset = News.objects.filter(status = 'P')
+    serializer_class = NewsSerializer
+
+class FavcategoryViewSet(ModelViewSet):
+    queryset = Favcategory.objects.all()
+    serializer_class = FavcategorySerializer
+
+class CategoryViewSet(ModelViewSet):
+    queryset = Category.objects.all()
+    serializer_class = CategorySerializer

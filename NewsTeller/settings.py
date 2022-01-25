@@ -37,8 +37,12 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'news',
+    'news.apps.NewsConfig',
     'rest_framework',
+    'rest_framework.authtoken',
+    'rest_auth',
+
+
 ]
 
 MIDDLEWARE = [
@@ -124,3 +128,13 @@ MEDIA_ROOT = BASE_DIR / 'media'
 MEDIA_URL = '/media/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.AutoField' 
+
+REST_FRAMEWORK = {
+    'DEFAULT_PERMISSION_CLASSES':[
+    'rest_framework.permissions.IsAuthenticated',
+    ],
+    'DEFAULT_AUTHENTICATION_CLASSES':[
+    'rest_framework.authentication.SessionAuthentication',
+    'rest_framework.authentication.TokenAuthentication',
+    ]
+}
