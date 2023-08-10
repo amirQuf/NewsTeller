@@ -1,5 +1,5 @@
 # NewsTeller
-Simple news site API by Django 4 and  Django Restframe work
+
 
 ## Table of Contents
 
@@ -16,7 +16,7 @@ Follow these steps to set up the project locally:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/your-repo.git
+   git clone https://github.com/amirQuf/NewsTeller
    ```
 
 2. Create a virtual environment:
@@ -54,7 +54,10 @@ The project should now be up and running on http://localhost:8000/.
 ## Usage
 
 Explain how to use your Django project. Provide instructions for common tasks, such as creating an admin account, accessing different features, or interacting with the application's APIs.
-
+# models:
+- News
+- category
+- favcategory
 ## Features
 
 Outline the key features and functionality of your Django project. Highlight what makes it unique or valuable to users. You can provide a bullet list or go into detail about each feature.
