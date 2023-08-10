@@ -52,8 +52,7 @@ Follow these steps to set up the project locally:
 The project should now be up and running on http://localhost:8000/.
 
 ## Usage
-
-Explain how to use your Django project. Provide instructions for common tasks, such as creating an admin account, accessing different features, or interacting with the application's APIs.
+use username and password for login and get jwt and put in response body of your request and call  one of end points.
 
 ### 3rd party Pakages:
 - Django
