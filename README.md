@@ -1,5 +1,5 @@
 # NewsTeller
-
+you just login and then mark some catagory for showing you in favorite part  
 
 ## Table of Contents
 
@@ -54,14 +54,31 @@ The project should now be up and running on http://localhost:8000/.
 ## Usage
 
 Explain how to use your Django project. Provide instructions for common tasks, such as creating an admin account, accessing different features, or interacting with the application's APIs.
-# models:
+
+### 3rd party Pakages:
+- Django
+- simplejwt
+- Django restframework
+- swagger
+- Pillow
+- cors
+- decouple
+
+### Api end points:
+
+  
+### models:
 - News
 - category
 - favcategory
+-  
 ## Features
-
-Outline the key features and functionality of your Django project. Highlight what makes it unique or valuable to users. You can provide a bullet list or go into detail about each feature.
-
+ - creating and updating News
+ - login and register
+ - adding and delte and update catagories
+ - mark catagories as favcatgori
+ - save News
+   
 ## Contributing
 
 Contributions are welcome! If you'd like to contribute to this project, please follow these steps:
